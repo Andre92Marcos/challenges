@@ -14,3 +14,9 @@ We can use searchsploit to find some already existing exploit by doing:
 	searchsploit gitlab
 
 But nothing relevant to our version comes up.
+
+By searching some info on the 11.4.7 release we find that it has been released in November of 2018. And by searching in the gitlab repository for commits about merge branch security we can find that just after the release of the 11.4.7 version a bunch of security related commits were done at the end of November.
+
+In this commits there is one that fixes one ssrf vulnerability which looks promising to exploit. We can exploit this by going to our newly created gitlab account, and to the import section, and import by repo url, we can find a write box that accepts urls. Is in this box that we can do a ssrf.
+
+
